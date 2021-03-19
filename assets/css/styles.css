@@ -53,6 +53,11 @@ a {
   padding: 0.6rem 1.6rem;
   border-radius: 50px;
 }
+.content-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 /* HERO SECTION */
 .hero {
@@ -60,9 +65,6 @@ a {
   width: 100%;
 }
 .hero .container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   width: 90%;
   height: 100%;
   margin: auto;
@@ -144,6 +146,9 @@ a {
 @media (max-width: 768px) {
   html {
     font-size: 9px;
+  }
+  .hero {
+    margin-top: 8rem;
   }
   .hero .container {
     flex-direction: column-reverse;
