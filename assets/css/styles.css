@@ -102,3 +102,18 @@ a {
   object-position: 50% 50%;
   border-radius: 12px;
 }
+
+@media (max-width: 768px) {
+  html {
+    font-size: 9px;
+  }
+  .hero .container {
+    flex-direction: column-reverse;
+  }
+  .hero .left .heading {
+    font-size: 4.5rem;
+  }
+  .hero .right {
+    margin-bottom: 5rem;
+  }
+}
