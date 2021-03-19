@@ -79,17 +79,55 @@ a {
   font-weight: 500;
   text-transform: uppercase;
   color: var(--primary-color);
+  opacity: 0;
+  animation: fade 0.3s ease-in-out forwards;
+  animation-delay: 1s;
 }
 .hero .heading {
   font-size: 6rem;
   font-family: "Montserrat", sans-serif;
   font-weight: 900;
 }
+.hero .heading .wrapper {
+  display: inline-block;
+  overflow: hidden;
+}
+.hero .heading .wrapper span {
+  position: relative;
+  bottom: -6rem;
+  animation: reveal 1s ease-in-out forwards;
+}
 .hero .description {
   font-size: 1.6rem;
   max-width: 400px;
   margin-top: 2.5rem;
   color: var(--secondary-black);
+  opacity: 0;
+  animation: fade 0.3s ease-in-out forwards;
+  animation-delay: 1s;
+}
+.hero .buttons {
+  opacity: 0;
+  animation: fade 0.3s ease-in-out forwards;
+  animation-delay: 1s;
+}
+/* Animation */
+@keyframes reveal {
+  0% {
+    bottom: -6rem;
+  }
+  100% {
+    bottom: 0;
+  }
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .hero .right {
